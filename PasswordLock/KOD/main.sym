@@ -1,0 +1,108 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+005.0   led
+006     lcd
+007.0   rs
+007.1   en
+007.2   relay
+008     PSP_DATA
+008.0   C1
+008.1   C2
+008.2   C3
+008.3   R1
+008.4   R2
+008.5   R3
+008.6   R4
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020-021 strtok.save
+022-026 password
+027-02B pswd
+02C-03A open_msg
+03B-042 welcome_msg
+043-051 close_msg
+052     c
+053     flag
+054     i
+055     count
+056     j
+057-058 strcmp.s1
+057     MAIN.@SCRATCH1
+057     keypad.@SCRATCH1
+057     check.@SCRATCH1
+058     display.a
+058     MAIN.@SCRATCH2
+059     display.b
+059-05A strcmp.s2
+05A     @delay_ms1.P1
+05B     strcmp.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+085.0   TRIS_led
+086     TRIS_lcd
+087.0   TRIS_rs
+087.1   TRIS_en
+087.2   TRIS_relay
+088.0   TRIS_C1
+088.1   TRIS_C2
+088.2   TRIS_C3
+088.3   TRIS_R1
+088.4   TRIS_R2
+088.5   TRIS_R3
+088.6   TRIS_R4
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @delay_ms1
+000019  debounce
+00001D  keypad
+0000CC  display
+0000DB  check
+0000E4  strcmp
+000163  MAIN
+000163  @cinit1
+00016B  @cinit2
+
+Project Directory:
+    C:\Users\EROOO\Desktop\Mikro Final\picc\MikroFinal\
+
+Project Files:
+    main.c                                                  [15-May-24 21:20  CRC=9CC8B709]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877.h [12-Kas-13 14:35  CRC=ADB5114D]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdio.h [31-Tem-07 13:24  CRC=4E4534F4]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h [14-Tem-11 10:13  CRC=23EDEC8F]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h [16-Tem-10 09:27  CRC=897CEC6C]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h [03-Oca-08 13:55  CRC=2D1F019F]
+
+Source signature=A06BD983
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC16F877
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA
